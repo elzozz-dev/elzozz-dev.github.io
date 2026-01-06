@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    min-height: 100vh;
+    padding: 40px;
+    overflow-x: hidden;
+}
+
+/* أشكال الخلفية */
+.background-shapes span {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 50%;
+    animation: float 8s infinite ease-in-out;
+}
+
+.background-shapes span:nth-child(1) {
+    top: 10%;
+    left: 5%;
+}
+
+.background-shapes span:nth-child(2) {
+    bottom: 15%;
+    right: 10%;
+    animation-delay: 2s;
+}
+
+.background-shapes span:nth-child(3) {
+    top: 50%;
+    right: 40%;
+    animation-delay: 4s;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 48px;
+    letter-spacing: 3px;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    backdrop-filter: blur(10px);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card ul li {
+    margin-bottom: 8px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    opacity: 0.7;
+}
